@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crud.css">
+    <title>CRUD</title>
+</head>
+<body>
+    <h1>FULL STACK WEB APP</h1>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="productCode">Roll No</label>
+                        <input type="text"name="productCode"id="productCode">
+                    </div>
+                    <div>
+                        <label for="product">Name</label>
+                        <input type="text"name="product"id="product">
+                    </div>
+                    <div>
+                        <label for="qty">Degree Year</label>
+                        <input type="number"name="qty"id="qty">
+                    </div>
+                    <div>
+                        <label for="perPrice">City Pincode</label>
+                        <input type="number"name="perPrice"id="perPrice">
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit"value="Submit">
+                        <input type="reset"value="Reset">
+                    </div>
+                </form>
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Roll no</th>
+                                <th>Name</th>
+                                <th>Degree Year</th>
+                                <th>City Pincode</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
